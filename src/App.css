@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@keyframes smooth-bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(-10px);
+    }
+    90% {
+        transform: translateY(0);
+    }
+}
+
+.animate-smooth-bounce {
+    animation: smooth-bounce 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
